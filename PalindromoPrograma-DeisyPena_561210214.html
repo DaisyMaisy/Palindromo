@@ -1,0 +1,64 @@
+<! progama palidromo por deisy peña cod 561210214//
+// presentado al profesor jorge rubiano , Inteligencia Artificial!>
+
+<html> 
+
+<head>
+
+</head>
+<center><h1> PROBRAMA PALINDROMO </center>
+<center><h2> INTELIGENCIA ARTIFICIAL </center>
+<center><h2> By Deisy Pena </center>
+<center><h3> cod: 561210214 </center>
+<br>
+<br>
+<br>
+<center> Presione F5 para comenzar de nuevo..</center>
+<body>
+
+<script type="text/javascript">
+
+var palabra = prompt("Ingrese una frase pegada (SIN ESPACIOS!)");
+palabra = palabra.toLowerCase(); // convertimos la cadena de caracteres en minuscula
+var pedasitos = palabra.split(""); // la palabra la separamos por pedacitos para poder comparala con otra
+var word = palabra.split("");  //la palabra tambien la ubicamos en word por pedacitos
+var word = word.reverse(); // la variable word la ponemos al reves por pedacitos para compararla con pedasitos mediante el ciclo mas adelante.
+var resultado = false; // predeterminamos el resultado en falso
+
+
+for (var i = 0; i < pedasitos.length; i++)
+{
+	if(pedasitos[i] === word[i])
+	{
+
+		resultado = true;  // este ciclo revisa cada posicion de 'pedacitos' y de 'word' comparando que cada letra matchea.
+
+	}else
+	{
+		resultado = false;
+		break; //finalizar el ciclo por que una condicion no fue valida
+	}
+}
+
+if (resultado == false)  // si la variable continua en falso entonces :
+{
+	alert("NO ES palindromo");
+
+}else
+{
+	alert("SI ES palindromo");	
+}
+
+</script>
+
+
+
+</body>
+	
+
+
+		
+
+
+
+
